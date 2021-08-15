@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #f12711;
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+  background: linear-gradient(to right, #f5af19, #f12711);
+
+  font-family: "Architects Daughter", cursive;
+  font-size: 24px;
+}
+
+.main-conatiner {
+  width: 95%;
+  margin: auto;
+}
+
+.container1 {
+  margin-left: 5%;
+  margin-top: 10px;
+}
+.container2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 5%;
+}
+.container3 {
+  display: none;
+  color: black;
+  position: absolute; /* to place it over notes*/
+  top: 26%;
+  left: 40%;
+}
+textarea {
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  outline: none;
+  border: none;
+  width: 400px;
+  height: 275px;
+  padding: 25px 25px 25px 25px;
+  border-radius: 10px;
+  background-color: yellow;
+  opacity: 0.8;
+}
+
+svg {
+  color: black;
+}
+
+#check_icon {
+  position: absolute;
+  right: 17%;
+  top: 8%;
+  color: green;
+}
+
+#x_icon {
+  position: absolute;
+  right: 8%;
+  top: 8%;
+  color: red;
+}
