@@ -19,6 +19,20 @@ var typeNote = () => {
   }
 };
 var background = 0;
+var body_onload = () => {
+  var x = document.getElementsByTagName("BODY")[0];
+  let background_color_onload =
+    "background: #f12711;background: -webkit-linear-gradient(to right, #f5af19, #f12711);background: linear-gradient(to right, #f5af19, #f12711);";
+  x.setAttribute(
+    "style",
+    `${background_color_onload}font-family: "Architects Daughter", cursive;font-size: 24px;`
+  );
+  let container3 = document.getElementsByClassName("container3")[0];
+  container3.setAttribute(
+    "style",
+    "display: none;color: black;position: absolute; /* to place it over notes*/top: 26%;left: 40%;"
+  );
+};
 
 var toggle = () => {
   let background_color = [
@@ -80,11 +94,11 @@ var margin = () => {
 };
 var rotate = () => {
   let random_rotate = [
-    "rotate(3deg)",
-    "rotate(1deg)",
+    "rotate(5deg)",
+    "rotate(2deg)",
     "rotate(-5deg)",
     "rotate(-1deg)",
-    "rotate(-10deg)",
+    "rotate(-7deg)",
   ];
   let index = Math.floor(Math.random() * random_rotate.length);
   return random_rotate[index];
