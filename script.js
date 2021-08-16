@@ -18,6 +18,25 @@ var typeNote = () => {
     container3.style.display = "none";
   }
 };
+var background = 0;
+
+var toggle = () => {
+  let background_color = [
+    "background: #1CD8D2;background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);background: linear-gradient(to right, #93EDC7, #1CD8D2);",
+    " background: #f12711;background: -webkit-linear-gradient(to right, #f5af19, #f12711);background: linear-gradient(to right, #f5af19, #f12711);",
+    "background: #00416A;background: -webkit-linear-gradient(to right, #FFE000, #799F0C, #00416A);background: linear-gradient(to right, #FFE000, #799F0C, #00416A);",
+  ];
+  var x = document.getElementsByTagName("BODY")[0];
+  if (background > background_color.length - 1) {
+    background = 0;
+  }
+  x.setAttribute(
+    "style",
+    `${
+      background_color[background++]
+    };font-family: "Architects Daughter", cursive;font-size: 24px;`
+  );
+};
 
 var createNote = () => {
   let noteText = document.getElementById("note_text").value;
